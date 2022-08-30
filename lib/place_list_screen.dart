@@ -24,20 +24,28 @@ class PlaceListScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Consumer<GreatPlace>(
-        builder: (context, gPlace, ch) => ListView.builder(
-          itemBuilder: (context, index) {
-            if (gPlace.item.isEmpty) {
-              return const Center(
-                child: Text('No Place Added'),
-              );
-            } else {
-              return ListBuilding(
-                  images: gPlace.item[index].image,
-                  title: gPlace.item[index].title);
-            }
-          },
-          itemCount: gPlace.item.length,
+      body: FutureBuilder(
+        future: Provider.of<GreatPlace>(context, listen: false).getandSetData(),
+        builder: (context, snapShot) => Consumer<GreatPlace>(
+          builder: (context, gPlace, ch) =>
+              snapShot.connectionState == ConnectionState.waiting
+                  ? const Center(
+                      child: CircularProgressIndicator(),
+                    )
+                  : ListView.builder(
+                      itemBuilder: (context, index) {
+                        if (gPlace.item.isEmpty) {
+                          return const Center(
+                            child: Text('No Place Added'),
+                          );
+                        } else {
+                          return ListBuilding(
+                              images: gPlace.item[index].image,
+                              title: gPlace.item[index].title);
+                        }
+                      },
+                      itemCount: gPlace.item.length,
+                    ),
         ),
       ),
     );
