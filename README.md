@@ -38,4 +38,4 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=amadirfan&show_icons=true&locale=en" alt="amadirfan" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=amadirfan&" alt="amadirfan" /></p>
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=amadirfan)](https://git.io/streak-stats)
