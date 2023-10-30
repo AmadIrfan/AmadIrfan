@@ -37,4 +37,4 @@
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=amadirfan&show_icons=true&locale=en&layout=compact" alt="amadirfan" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=amadirfan&show_icons=true&locale=en" alt="amadirfan" /></p>
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=amadirfan)
+<!-- ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=amadirfan) -->
